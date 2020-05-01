@@ -168,6 +168,159 @@ body {
     font-size: 20px;
 }
 
+
+/* Четвёртая секция */
+
+.section-figurs {
+    padding: 100px 0;
+    background-color: #b8733e;
+}
+
+.section-figurs .container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    grid-gap: 70px;
+}
+
+.figure {
+    display: block;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background-color: #9c5230;
+    transition: all 0.5s ease;
+}
+
+.figure:hover {
+    border-radius: 25%;
+    background-color: #91370d;
+}
+
+/* Пятая секция */
+
+.effect {
+    padding: 90px 0;
+    background-color: #733e26;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.effect .one {
+    display: block;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #6e3813;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.effect .two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background-color: #854519;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+.effect .two:hover {
+    width: 500px;
+    height: 500px;
+}
+
+.effect .three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background-color: #9e5523;
+    border-radius: 50%;
+    transition: all 0.7s ease;
+}
+
+.effect .three:hover {
+    width: 500px;
+    height: 500px;
+    transition: all 0.9s ease;
+}
+
+.effect .four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: #b06531;
+    border-radius: 50%;
+    transition: all 1.1s ease;
+}
+
+.effect .four:hover {
+    width: 500px;
+    height: 500px;
+}
+
+.effect .five {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #c97940;
+    border-radius: 50%;
+    transition: all 1.3s ease;
+}
+
+.effect .five:hover {
+    width: 500px;
+    height: 500px;
+}
+
+.effect .six {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #d68951;
+    border-radius: 50%;
+    transition: all 1.5s ease;
+}
+
+.effect .six:hover {
+    width: 500px;
+    height: 500px;
+}
+
+.effect .seven {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    background-color: #733e26;
+    border-radius: 50%;
+    transition: all 1.7s ease;
+    cursor: pointer;
+}
+
+.effect .seven:hover {
+    width: 500px;
+    height: 500px;
+}
+
+.effect .seven:active {
+    background-color: red;
+}
+
 /* Бургер меню */
 
 .burger-menu {
@@ -251,6 +404,16 @@ body {
     }
 }
 
+@media screen and (max-width: 715px) {
+    .section-figurs .container {
+        grid-template-columns: auto auto;
+    }
+
+    .one {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 530px) {
     .section p {
         width: 450px;
@@ -260,11 +423,23 @@ body {
         grid-template-columns: auto auto;
         grid-gap: 60px;
     }
+
+    .effect {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 475px) {
     .section p {
         width: 400px;
+    }
+
+    .section-figurs .container {
+        grid-template-columns: auto;
+    }
+
+    .two {
+        display: none;
     }
 }
 
