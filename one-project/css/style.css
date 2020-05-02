@@ -6,7 +6,6 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    outline: 0 !important;
     border: 0;
 }
 
@@ -35,11 +34,11 @@ body {
 }
 
 .header__logo {
-    font-size: 30px;
     padding: 12px 16px;
     background-color: #bf5934;
-    cursor: pointer;
+    font-size: 30px;
     color: #e0b299;
+    cursor: pointer;
     transition: all 0.7s ease;
 }
 
@@ -84,9 +83,9 @@ body {
 
 .section p {
     margin-top: 30px;
+    width: 500px;
     color: #a34c2c;
     font-size: 22px;
-    width: 500px;
     line-height: 35px;
 }
 
